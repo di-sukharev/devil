@@ -73,6 +73,6 @@ export const runCommand = command(
       outroSuccess("Finished task 🏴‍☠️");
     }
 
-    outroSuccess("Finished task 🏴‍☠️");
+    outroSuccess("Finished all tasks 🏴‍☠️");
   }
 );

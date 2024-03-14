@@ -2,9 +2,9 @@ import { cli } from "cleye";
 
 import packageJSON from "./package.json";
 
-import { configCommand } from "./src/commands/config.js";
-import { runCommand } from "./src/commands/run/run.js";
-import { initCommand } from "./src/commands/init.js";
+import { configCommand } from "./src/commands/config/index.js";
+import { runCommand } from "./src/commands/run/index.js";
+import { initCommand } from "./src/commands/init/index.js";
 
 const extraArgs = process.argv.slice(2);
 
