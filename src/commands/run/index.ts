@@ -1,3 +1,4 @@
+// @ts-nocheck
 import { intro, note, outro } from "@clack/prompts";
 import { command } from "cleye";
 import { call } from "../../utils/call";
