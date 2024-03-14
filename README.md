@@ -8,3 +8,5 @@
 	<h1>open-source ai software engineer with naughty personality built in 30 days</h1>
 	<a href="https://www.npmjs.com/package/pipepiper"><img src="https://img.shields.io/npm/v/pipepiper" alt="Current version"></a>
 </div>
+
+Devil is work in progress, fork the repo, submit your pull requests, open issues, start discussions, join the great build!
