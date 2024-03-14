@@ -36,7 +36,7 @@ export const runCommand = command(
     intro("Welcome 🏴‍☠️");
 
     // TODO: check latest package version and advise to upgrade
-    // TODO: check is initialized
+    // TODO: check is git repo initialized
 
     const requirements = await getTechnicalRequirements();
     const projectContext = await getProjectContext();
@@ -45,6 +45,8 @@ export const runCommand = command(
       requirements,
       projectContext
     );
+
+    await creteGitBranch();
 
     for (const task of tasks) {
       outro("Starting task");
@@ -69,11 +71,15 @@ export const runCommand = command(
         await writeCodeUntilTestsAreSolved(tests); // https://github.com/di-sukharev/AI-TDD
 
         outroSuccess("Finished subtask 🏴‍☠️");
+
+        await gitAddCommitPush(); // we can then take `git --diff` if previous tests are broken, to revert back
       }
 
       outroSuccess("Finished task 🏴‍☠️");
     }
 
     outroSuccess("Finished all tasks 🏴‍☠️");
+
+    await openGithubPullRequest(); // add github action to trigger on PR activity
   }
 );
