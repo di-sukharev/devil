@@ -8,10 +8,8 @@
 	<h1>Open-source AI Software Engineer</br>with naughty personality</h1>
 </div>
 
-Devil is work in progress
+Devil still can't be built in 2024. LLMs are still not capable of coding anything more complex than a single file HMTL game.
 
-fork the repo, submit your pull requests
+Instead look at [AI-TDD](https://github.com/di-sukharev/AI-TDD).
 
-open issues, start discussions
-
-join the great build
+![image](https://github.com/di-sukharev/devil/assets/57486732/95477868-68aa-4b1c-b9d3-e9e80be6330d)
